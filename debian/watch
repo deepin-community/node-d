@@ -1,0 +1,11 @@
+version=4
+opts=\
+dversionmangle=auto,\
+filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-d-$1.tar.gz/ \
+ https://github.com/medikoo/d/tags .*/archive/v?([\d\.]+).tar.gz
+
+opts=\
+component=type,\
+dversionmangle=auto,\
+filenamemangle=s/.*\/v?([\d\.-]+)\.tar\.gz/node-type-$1.tar.gz/ \
+ https://github.com/medikoo/type/tags .*/archive/v?([\d\.]+).tar.gz ignore

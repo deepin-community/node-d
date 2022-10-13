@@ -1,0 +1,29 @@
+node-d (1.0.1-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Jelmer Vernooĳ ]
+  * Use secure copyright file specification URI.
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 12
+  * Declare compliance with policy 4.5.0
+  * Add "Rules-Requires-Root: no"
+  * Change section to javascript
+  * Add debian/gbp.conf
+  * Update debian/watch to use github tags
+  * New upstream version 1.0.1
+  * Embed component: type
+  * New upstream version 1.0.1
+  * Use pkg-js-tools auto install
+  * Update copyright
+  * Update VCS fields to salsa
+  * Add upstream/metadata
+
+ -- Xavier Guimard <yadd@debian.org>  Mon, 17 Feb 2020 14:39:57 +0100
+
+node-d (1.0.0-1) unstable; urgency=low
+
+  * Initial release (Closes: #875739)
+
+ -- Pirate Praveen <praveen@debian.org>  Thu, 14 Sep 2017 13:48:00 +0530
