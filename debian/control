@@ -1,25 +1,25 @@
 Source: node-d
+Section: javascript
+Priority: optional
 Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
 Uploaders: Pirate Praveen <praveen@debian.org>
-Section: javascript
-Testsuite: autopkgtest-pkg-nodejs
-Priority: optional
-Build-Depends:
- debhelper-compat (= 12)
+Build-Depends: debhelper-compat (= 13)
+ , dh-sequence-nodejs
  , node-es5-ext <!nocheck>
- , pkg-js-tools (>= 0.9.20~)
-Standards-Version: 4.5.0
+ , node-type <!nocheck>
+Standards-Version: 4.6.0
 Vcs-Browser: https://salsa.debian.org/js-team/node-d
 Vcs-Git: https://salsa.debian.org/js-team/node-d.git
-Homepage: https://github.com/medikoo/d#readme
+Homepage: https://github.com/medikoo/d
+Testsuite: autopkgtest-pkg-nodejs
 Rules-Requires-Root: no
 
 Package: node-d
 Architecture: all
-Depends:
- ${misc:Depends}
- , node-es5-ext <!nocheck>
- , nodejs
+Depends: ${misc:Depends}
+ , node-es5-ext
+ , node-type
+Provides: ${nodejs:Provides}
 Description: Property descriptor factory
  Originally derived from es5-ext package. Defining properties with descriptors
  is very verbose, this module makes it short.
