@@ -3,6 +3,7 @@ Upstream-Name: d
 Upstream-Contact: https://github.com/medikoo/d/issues
 Source: https://github.com/medikoo/d
  https://github.com/medikoo/type
+ https://registry.npmjs.org/@types/d
 
 Files: *
 Copyright: 2013-2019 Mariusz Nowak <medyk@medikoo.com>
@@ -10,7 +11,11 @@ License: ISC
 
 Files: debian/*
 Copyright: 2017 Pirate Praveen <praveen@debian.org>
- 2020 Xavier Guimard <yadd@debian.org>
+ 2020 Yadd <yadd@debian.org>
+License: Expat
+
+Files: types-*/*
+Copyright: Microsoft Corporation
 License: Expat
 
 License: Expat
